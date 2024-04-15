@@ -48,6 +48,7 @@ while True:
         y = " ".join(str(x) for x in y_class)
         y = int(y)
         print(labels[y])
+        process_this_frame = 0 #prevent overflow
         #Only predict if a fruit is found
         if(y==0 or y==21):
             print(labels[y])
